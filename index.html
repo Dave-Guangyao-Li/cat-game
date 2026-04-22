@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>养猫咪小游戏</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="menu-panel" id="menu-panel">
+        <h1>养猫咪小游戏</h1>
+        <p>照顾小猫，保持状态健康并累计分数。</p>
+        <ul>
+          <li>方向键: 移动</li>
+          <li>Enter: 开始 / 互动 / 重新开始</li>
+          <li>Space: 抚摸猫咪</li>
+          <li>A: 暂停 / 继续</li>
+          <li>B: 使用零食技能</li>
+          <li>F: 全屏切换</li>
+        </ul>
+        <button id="start-btn" type="button">开始游戏</button>
+      </header>
+      <canvas id="game-canvas" width="960" height="540" aria-label="Cat care game canvas"></canvas>
+    </main>
+    <script type="module" src="./game.js"></script>
+  </body>
+</html>

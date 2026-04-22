@@ -1,0 +1,14 @@
+{
+  "name": "cat-game",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "hooks:install": "git config core.hooksPath .githooks",
+    "test:playwright": "node scripts/web_game_playwright_client.js --url http://localhost:5188 --actions-file references/actions-full-check.json --click-selector '#start-btn' --iterations 3 --pause-ms 300 --screenshot-dir output/web-game/latest",
+    "test:playwright:smoke": "node scripts/web_game_playwright_client.js --url http://localhost:5188 --actions-file references/action_payloads.json --click-selector '#start-btn' --iterations 2 --pause-ms 250 --screenshot-dir output/web-game/smoke",
+    "test:playwright:prepush": "node scripts/run_smoke_with_server.js"
+  }
+}
