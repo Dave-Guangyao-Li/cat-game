@@ -24,3 +24,10 @@ Original prompt: Build and iterate a playable web game in this workspace, valida
 - Updated cat character rendering to a clearer cat silhouette (ears/whiskers/tail) per feedback.
 - Ran `npm run test:playwright:smoke` on `http://localhost:5188`; generated fresh artifacts under `output/web-game/smoke` with no `errors-*.json`.
 - Ran `npm run test:playwright:prepush`; generated `output/web-game/smoke-prepush` with no `errors-*.json`.
+- Expanded `TECH_GUIDE_ZH.md` with detailed explanation of Playwright artifacts (`shot/state/errors`), pass criteria, and retention policy.
+- Expanded `TECH_GUIDE_ZH.md` with macro-level architecture rationale:
+  - Why current stack was chosen
+  - Whether Playwright smoke is standard practice
+  - Two-layer test strategy (`smoke` + `full`)
+  - Scaling triggers and upgrade path
+  - Team workflow and technical decision criteria
